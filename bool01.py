@@ -47,7 +47,7 @@ print(bool(None))
 
 #반복문에서 활용
 a = [1, 2, 3, 4]
-while a:
+while a: #a가 True이면 반복(리스트에 원소가 있는 경우 반복..)
     print(a.pop()) #리스트에서 마지막 원소 빼내기
     print(a)
 

@@ -28,16 +28,18 @@ d = a.copy() #위에서 처럼 split을 하지 않고 카피하면 복사가 된
 print(id(a))
 print(id(d))
 
-# 튜플 사용
-a, b = 1, 2 # (a, b) = (1, 2) // 괄호 생략 가능(튜플)
+# 튜플 사용(형식만 튜플... 튜플이 아님.. 데이터)
+a, b = 1, 2  # (a, b) = (1, 2) // 괄호 생략 가능
 print(a) 
 print(b)
 
 # temp를 사용한 스와핑을 쉽게 할 수 있다.
-a, b = 3, 4
+a, b = b, a
 print(a)
 print(b)
 
 a = [1, 2, 3]
 b = [1, 2, 3]
 print(a is b) # False
+
+# 연습문제

@@ -57,5 +57,5 @@ print(o)
 
 # 딕셔너리에서의 f 문자열.. 딕셔너리 = java에서 Map이라고 생각하자...(key, value)
 p = {"name":"홍길동", "age":30} # 딕셔너리..(JS에서 JSON과 유사함)
-q = f"나의 이름은 {p['name']}이고, 나이는 {p['age']}살입니다."
+q = f"나의 이름은 {p['name']}이고, 나이는 {p['age']}살입니다." # 딕셔너리이름.["key"] = value가 나온다.
 print(q)

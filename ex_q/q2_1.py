@@ -45,11 +45,7 @@ print(result)
 t1 = (1, 2, 3)
 print(t1+(4,))
 
-# 오류발생
-a = dict()
-print(a)
-a[[1]] = 'python'
-print(a)
+# 오류발생하는 경우 -> a[[1]] = 'python' 왜냐하면, 딕셔너리에 key로 List는 허용하지 않음.
 
 #  딕셔너리에서 B값 출력하기
 dic = {"A":90, "B":80, "C":70}
