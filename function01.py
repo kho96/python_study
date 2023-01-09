@@ -81,3 +81,45 @@ print(type(result)) # tuple
 result_add, result_mul = add_and_mul(3,4)
 print(result_add)
 print(result_mul)
+
+# return 값은 1개.. 
+def add_and_div(a, b):
+    return a+b
+    return a/b # error
+
+# 매개변수 초기값 설정
+def say_myself(name, age, man=True):
+    print("이름: %s" %name)
+    print("나이: %d" %age)
+    if man:
+        print("남자")
+    else:
+        print("여자")
+        
+say_myself("홍길동", 20, True) 
+say_myself("강감찬", 30)  # 매겨변수 초기값이 설정 된 경우, 넣지 않으면 default로 설정된 초기값으로 작동
+say_myself("유관순", 15, False)      
+
+# 주의사항 - 기본값 설정 매개변수는 제일 마지막에 위치해야함. 
+# def say_yourself(name, man=True, age): # 컴파일에서 이미 error 
+#       pass
+
+# 변수의 유효 범위
+v1 = 1 # 전역변수
+def vartest(v1):
+    v1 += 1     # 지역변수로 작용.. -> 함수가 종료되면 사라진다(지역변수..)
+    print("def: %d" % v1)
+vartest(v1) #2
+print("out v1: %d" % v1) #1
+
+def vartest2():
+    global v1   # 전역변수를 함수 내에서 사용한다. (사용은 가능하지만 권장하지는 않음..)
+    v1 += 1
+
+vartest2()
+print("out2 v1: %d" % v1) #2
+
+# lambda식 (자바스크립트의 익명함수와 유사)
+func2 = lambda a, b: a + b  # 한줄에서는 유리하지만, 권장하는 방식은 아님
+print(func2(1,2 ))
+    
