@@ -52,7 +52,7 @@ for number in range(len(marks)):
 # for, range를 이용한 구구단
 for i in range(2, 10):
     for j in range(1, 10):
-        print("{0}".format(i*j), end=" ")
+        print("{0}".format(i*j), end=" ") # end의 기본값은 엔터
     print()    
 
 

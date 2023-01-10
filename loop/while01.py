@@ -40,5 +40,5 @@ a = 0
 while a < 10:
     a += 1
     if a == 5:
-        continue
-    print(a)
+        continue # 아래 코드는 실행되지 않고 반복을 진행-> 5는 출력되지 않음
+    print(a) 

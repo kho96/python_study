@@ -121,5 +121,5 @@ print("out2 v1: %d" % v1) #2
 
 # lambda식 (자바스크립트의 익명함수와 유사)
 func2 = lambda a, b: a + b  # 한줄에서는 유리하지만, 권장하는 방식은 아님
-print(func2(1,2 ))
+print(func2(1,2 )) # 3
     
